@@ -1,1 +1,1 @@
-# 0802-Reactn--pierwsze-spotkanie
+# 0802-React__pierwsze-spotkanie
