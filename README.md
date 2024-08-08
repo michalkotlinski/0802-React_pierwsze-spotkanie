@@ -1,4 +1,4 @@
-# TODO-LIST & IMMUTABILITY
+# TODO-LIST - React first touch
 
 ## About project
 This project is a simple todo-list webapp with immutability rules.
