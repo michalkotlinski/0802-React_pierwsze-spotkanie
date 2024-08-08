@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/container.css" rel="stylesheet">
+    <link href="CSS/section.css" rel="stylesheet">
+    <link href="CSS/form.css" rel="stylesheet">
+    <link href="CSS/list.css" rel="stylesheet">
+    <link href="CSS/buttonArea.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <meta property="og:image" content="/images/toDoListLogo.png">
+    <link rel="icon" href="assets\favicon.ico">
+    <script defer src="JS/script.js"></script>
+</head>
+
+<body class="document">
+    <div class="container">
+        <h1>Lista zadań</h1>
+        <section class="section">
+            <header class="section__header">
+                <h2>Dodaj nowe zadanie</h2>
+            </header>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input class="form__input js-input" placeholder="Co robimy?">
+                    <button class="form__button">Dodaj zadanie </button>
+                </form>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section__header section__header--withButtons">
+                <h2>Lista zadań</h2>
+                <div class="js-buttonsContainer buttonsArea"></div>
+            </header>
+            <div class="section__body section__body--withList">
+                <ul class="js-tasks"></ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

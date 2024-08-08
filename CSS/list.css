@@ -1,0 +1,64 @@
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 10px;
+    grid-gap: 10px;
+    padding: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.list__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: white;
+}
+
+.list__button--remove {
+    background-color: hsl(10, 96%, 53%);
+    transition: background 0.3s, transform 0.6s;
+}
+
+.list__button--remove:hover {
+    background-color: hsl(10, 96%, 75%);
+    transform: scale(1.1);
+}
+
+.list__button--remove:active {
+    background-color: hsl(10, 96%, 90%);
+    transform: scale(1.1);
+}
+
+.list__button--toggleDone {
+    background-color: hsl(160, 76%, 25%);
+    transition: background 0.3s, transform 0.6s;
+}
+
+.list__button--toggleDone:hover {
+    background-color: hsl(124, 83%, 40%);
+    transform: scale(1.1);
+}
+
+.list__button--toggleDone:active {
+    background-color: hsl(124, 83%, 55%);
+    transform: scale(1.1);
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__item--hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .list__item {
+        margin-left: 5px;
+        /* Mniejszy margines z lewej strony */
+        margin-right: 5px;
+        /* Mniejszy margines z prawej strony */
+    }
+}

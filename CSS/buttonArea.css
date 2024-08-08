@@ -1,0 +1,41 @@
+.buttonsArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttonsArea__button {
+  display: inline-block;
+  color: hsl(180, 53%, 32%);
+  border: none;
+  background: none;
+  margin-right: 10px;
+  transition: color 0.4s;
+  padding: 5px;
+  box-sizing: content-box;
+}
+
+@media(max-width:992px) {
+  .buttonsArea__button {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.buttonsArea__button:hover {
+  cursor: pointer;
+  color: hsl(238, 65%, 23%);
+  background: none;
+  transform: scale(1.1);
+}
+
+.buttonsArea__button:active {
+  color: hsl(233, 91%, 9%);
+  background: none;
+  transform: scale(1.1);
+}
+
+.buttonsArea__button:disabled {
+  color: #bbb;
+  background: none;
+}
